@@ -37,7 +37,7 @@ def get_filename(day, part=None):
 
 def create_new_day():
     day = 1
-    while Path(ROOT_PATH, 'days/days', f'day{str(day).zfill(2)}.py').exists():
+    while Path(ROOT_PATH, 'days', f'day{str(day).zfill(2)}.py').exists():
         day += 1
 
     Path(ROOT_PATH, get_filename(day, 'small')).write_text('')
