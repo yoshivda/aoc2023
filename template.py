@@ -1,3 +1,5 @@
+import time
+
 from lib import load_input
 
 
@@ -16,4 +18,6 @@ def part_two(data):
 
 if __name__ == '__main__':
     print(solve(load_input('small')))
+    # start = time.time()
     # print(solve(load_input()))
+    # print(time.time() - start)
